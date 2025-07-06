@@ -5,7 +5,7 @@ export type weatherLocation = {
 export type WeatherData = {
   city: string;
   temp: number;
-  visibility: number;
+  description: string;
 };
 
 export type WeatherCardProps = {

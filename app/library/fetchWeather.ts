@@ -14,7 +14,7 @@ export async function fetchCoordinates(city: string) {
 
 export async function fetchWeather(coordinates: Coordinates) {
   const response = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=0361cbb9a191b573c8693c32276a0672`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=0361cbb9a191b573c8693c32276a0672&units=metric`
   );
 
   if (!response.ok) {
